@@ -1,46 +1,40 @@
+.maindiv {
+  width: 95%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
-.maindiv{
-    padding: 30px;
-  }
-  .btnenquire{
-    background-color: green;
-    margin-right: 30px;
-    font-weight: bold;
-    width: 200px;
-    height: 30Px;
-    border-radius: 10ox;
-    border: 2px solid gray;
-  }
+mat-card {
+  background-color: white;
+  width: 85%;
+  padding: 10px;
+  margin: 10px;
   
-  .mat-card{
-    background-color: whitesmoke;
-    margin: 5px;
-  }
-  .maindiv{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    margin-top: 20px;
-    background-color:white;
+}
+.col{
+  height: 50%;
+}
+.row {
+  display: flex;
+}
 
-  }
-    .mat-card-image{
-      width: 200px;
-      height: 100px;
-    }
-    .card-spacing {
-      margin-bottom: 20px; /* Adjust the value to your preference */
-      background-color:grey;
-      
-    }
-    
-    .backbtn{
-        margin-right: 48px;
-        font-weight: bold;
-        width: 200px;
-        height: 60Px;
-        border-radius: 10x;
-        border: 5px solid gray;
-        align-self: flex-end;
-        margin-bottom: 10px;
-    }
+.container {
+  display: flex; /* Make the container a flex container */
+}
+
+
+
+.specs-container {
+  flex: 1; /* Let the specs container take 50% of the container's width */
+}
+.image {
+  width: 200px; /* Set the desired width */
+  height: auto; /* Allow the height to adjust automatically based on the width */
+}
+
+.specification-text {
+  color: black; /* Change "black" to the color you prefer */
+}

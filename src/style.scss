@@ -1,0 +1,177 @@
+@use '@angular/material' as mat;
+
+// @include mat-core();
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* You can add global styles to this file, and also import other style files */
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+// $primary: (
+//     50 : #f3e0e0,
+//     100 : #e0b3b3,
+//     200 : #cc8080,
+//     300 : #b84d4d,
+//     400 : #a82626,
+//     500 : #990000,
+//     600 : #910000,
+//     700 : #860000,
+//     800 : #7c0000,
+//     900 : #6b0000,
+//     A100 : #ff9a9a,
+//     A200 : #ff6767,
+//     A400 : #ff3434,
+//     A700 : #ff1a1a,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #ffffff,
+//         400 : #ffffff,
+//         500 : #ffffff,
+//         600 : #ffffff,
+//         700 : #ffffff,
+//         800 : #ffffff,
+//         900 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #ffffff,
+//         A700 : #ffffff,
+//     )
+// );
+
+
+
+
+
+// /* For use in src/lib/core/theming/_palette.scss */
+$primary: (
+    50 : #e7efe4,
+    100 : #c3d6bb,
+    200 : #9cbb8e,
+    300 : #749f61,
+    400 : #568b3f,
+    500 : #38761d,
+    600 : #326e1a,
+    700 : #2b6315,
+    800 : #245911,
+    900 : #17460a,
+    A100 : #94ff7d,
+    A200 : #6aff4a,
+    A400 : #40ff17,
+    A700 : #2dfc00,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$accent: (
+    50 : #f7f2e0,
+    100 : #ecdeb3,
+    200 : #dfc880,
+    300 : #d2b14d,
+    400 : #c9a126,
+    500 : #bf9000,
+    600 : #b98800,
+    700 : #b17d00,
+    800 : #a97300,
+    900 : #9b6100,
+    A100 : #ffe6c6,
+    A200 : #ffd093,
+    A400 : #ffba60,
+    A700 : #ffaf47,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$warn: (
+    50 : #f9e0e0,
+    100 : #f0b3b3,
+    200 : #e68080,
+    300 : #db4d4d,
+    400 : #d42626,
+    500 : #cc0000,
+    600 : #c70000,
+    700 : #c00000,
+    800 : #b90000,
+    900 : #ad0000,
+    A100 : #ffd7d7,
+    A200 : #ffa4a4,
+    A400 : #ff7171,
+    A700 : #ff5858,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+
+$primary: mat.define-palette($primary,900);
+$accent: mat.define-palette($accent,900);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$warn: mat.define-palette($warn,900);
+
+$theme: mat.define-light-theme((
+ color: (
+   primary: $primary,
+   accent: $accent,
+   warn: $warn,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@include mat.all-component-themes($theme);

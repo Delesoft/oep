@@ -21,6 +21,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 const MaterialComponents=[
@@ -47,7 +48,8 @@ MatExpansionModule,
 MatDialogModule,
 MatPaginatorModule,
 MatGridListModule,
-MatMenuModule
+MatMenuModule,
+MatDividerModule
 
 
 
