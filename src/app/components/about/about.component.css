@@ -16,6 +16,24 @@ background-color: white;
 
 }
 
+.custom-image {
+    width: 100px; /* Adjust the width of the circular image */
+    height: 100px; /* Adjust the height of the circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the entire circular area */
+    transform: rotate(-90deg); /* Rotate the image 90 degrees clockwise */
+    padding: 5px;
+  }
+  
+  
+.custom {
+    width: 100px; /* Adjust the width of the circular image */
+    height: 100px; /* Adjust the height of the circular image */
+    border-radius: 50%; /* Make the image circular */
+   
+   
+    padding: 5px;
+  }
 .rotated-image {
     transform: rotate(-90deg); /* Rotate the image 90 degrees clockwise */
     
