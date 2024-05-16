@@ -9,9 +9,9 @@
 
 .contactbtn{
     background-color: red;
-    margin-right: 30px;
+    margin-left: 30px;
         font-weight: bold;
-        width: 200px;
+        width: 150px;
         height: 30Px;
         border-radius: 10x;
         border: 2px solid gray;
@@ -23,3 +23,43 @@
 
 
 
+.hover-class:hover {
+    background-color: black;
+    color: white; /* Optionally change text color when hovered */
+}
+
+.spacer {
+    flex-grow: 2; /* Adjust the flex-grow value to increase the space */
+  }
+  
+  .mat-toolbar-row {
+    justify-content: flex-end; /* Align items to the end of the toolbar */
+  }
+  
+  .mat-toolbar .mat-button {
+    min-width: 200px; /* Set a minimum width for the buttons */
+  }
+  
+
+  .products-menu {
+    position: relative;
+  }
+  
+  .products-menu .mat-menu-panel {
+    position: absolute !important;
+    top: calc(100% + 5px);
+    left: 0;
+  }
+  
+  .products-menu .mat-menu-content {
+    margin-top: 0 !important;
+  }
+  
+  .mat-menu-panel { /* to make the menu appear even if the parent is not hovered */
+    display: none;
+  }
+  
+  .products-menu:hover .mat-menu-panel {
+    display: block;
+  }
+  

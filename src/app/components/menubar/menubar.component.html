@@ -2,28 +2,33 @@
 <mat-toolbar color="primary" class="mat-elevation-z8" >
     <span>OEP Healthcare Suppliers</span>
     <span class="spacer"></span>
-    <button routerLink=""  mat-button>Home</button>
-    <button routerLink="about" mat-button>About Us</button>
-    <button  routerLink="products" mat-button>
+    <button routerLink="" class="hover-class" mat-button>Home</button>
+    <button routerLink="about"  class="hover-class" mat-button>About Us</button>
+    
+    <button routerLink="products" mat-button class="hover-class products-menu">
       <div class="valign" [matMenuTriggerFor]="products">Products
-  <mat-icon>arrow_drop_down</mat-icon>
+        <mat-icon>arrow_drop_down</mat-icon>
       </div>
-  
     </button>
+    
     <button class="contactbtn" routerLink="contacts" mat-raised-button >
       
       Contact</button>
   
   </mat-toolbar>
   
-  <mat-menu #products>
-    <button routerLink="xrays" mat-menu-item>X-RAY Machines</button>
+  <mat-menu #products  >
+    <!-- <button routerLink="xrays" mat-menu-item>X-RAY Machines</button> -->
+    <button routerLink="mammos" mat-menu-item>Mammograms</button>
     <button routerLink="ultrasounds" mat-menu-item>Ultra-Sounds</button>
     <button routerLink="ctscans" mat-menu-item>CT Scans</button>
     <button routerLink="mris" mat-menu-item>MRIs</button>
-    <button routerLink="mammos" mat-menu-item>Mammograms</button>
+    
   
   </mat-menu>
   <router-outlet></router-outlet>
   
+   
+
+
   
