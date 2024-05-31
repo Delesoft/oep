@@ -3,7 +3,7 @@
     <span>OEP Healthcare Suppliers</span>
     <span class="spacer"></span>
     <button routerLink="" class="hover-class" mat-button>Home</button>
-    <button routerLink="about"  class="hover-class" mat-button>About Us</button>
+    <button routerLink="createproperty"  class="hover-class" mat-button>About Us</button>
     
     <button routerLink="products" mat-button class="hover-class products-menu">
       <div class="valign" [matMenuTriggerFor]="products">Products
@@ -18,7 +18,7 @@
   </mat-toolbar>
   
   <mat-menu #products  >
-    <!-- <button routerLink="xrays" mat-menu-item>X-RAY Machines</button> -->
+    <button routerLink="xrays" mat-menu-item>X-RAY Machines</button>
     <button routerLink="mammos" mat-menu-item>Mammograms</button>
     <button routerLink="ultrasounds" mat-menu-item>Ultra-Sounds</button>
     <button routerLink="ctscans" mat-menu-item>CT Scans</button>
